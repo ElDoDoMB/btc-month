@@ -1,0 +1,28 @@
+.select2-container {
+	width: 150px !important;
+    max-width: 100% !important;
+}
+.select2-container--default .select2-selection--single {
+	font-size: 14px !important; 
+    line-height: 38px !important;
+	background-color: #eeeeee !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 0 !important;
+    height: 40px !important;
+    text-align: center !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 38px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 40px !important;
+} 
+.flag-icon {
+	margin-right: 5px;
+}
+.gtd-leads-form .col-md-5 {
+	padding-right: 4px;
+}
+.gtd-leads-form .col-md-7 {
+	padding-left: 4px;
+}
