@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, minimum-scale=1,initial-scale=1">
+    <meta name="amp-script-src" content="sha384-YCFs8k-ouELcBTgzKzNAujZFxygwiqimSqKK7JqeKaGNflwDxaC3g2toj7s_kxWG">
     <title>Bitcoin Evolution</title>
     <!-- Styles -->
 	<link rel="stylesheet" href="styles/all.min.css">
@@ -64,7 +65,40 @@
 </head>
 
 <body ng-app="uniforms" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gtd-body-visible gtd-sdk-inited" ng-controller="MainController">
-    
+    <!-- <div id="popup" class="exit_popup bitcoinpopup" style="display: none;">
+		<div class="exit_popup_overlay"></div>
+		<div class="close_button" id="close_button">
+        </div>
+        <amp-script script="close-button"></amp-script>
+        <script id="close-button" type="text/plain" target="amp-script">
+            $('#close_button').on("click", function() {
+                $('#popup').css('display', 'none');
+                mousebottom = 0;
+                setTimeout(function () {
+                pu = 1;
+                }, 5000);
+            })
+        </script>
+        <div class="popup_inner">
+            <div class="popup_content">
+                <div class="popup_content_inner">
+                    <div class="popup-content-wrapper">
+                        <div class="popup-header">
+                            <div class="title">
+                                You just made a BIG mistake.
+                            </div>
+                            <div class="subtitle">
+                                This is your <b>LAST CHANCE</b> to join the <b><i>Bitcoin Evolution</i></b> and secure your financial future.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-form-wrapper">
+                        <my-form id="popup_form" pane="f2"></my-form>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div> -->
     <amp-script script="timer-script"></amp-script>
     <script id="timer-script" type="text/plain" target="amp-script">
 		// выставляем секунды
