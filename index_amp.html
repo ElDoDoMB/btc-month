@@ -111,8 +111,10 @@
 		<div class="container">
 			<p class="intro-p">
 				<b>WARNING</b>:<span>Due to extremely high media demand, we will close registration as of</span>
-				<b><span class="gtd-date-current-date">
-						<script language="javascript" type="text/javascript">
+				<b>
+                    <span class="gtd-date-current-date">
+                        <amp-script script="date-script"></amp-script>
+                        <script id="date-script" type="text/plain" target="amp-script">
 							var d = new Date();
 
 							var day = new Array("Sunday", "Monday", "Tuesday",
@@ -192,10 +194,28 @@
                     <div class="embed-container">
                         <div class="video embed-responsive embed-responsive-16by9 embed-responsive-video">
                             <div class="gtd-video-title gtd-date-current-date">
-                                
+                                <amp-script script="date-script"></amp-script>
+                                <script id="date-script" type="text/plain" target="amp-script">
+                                    var d = new Date();
+
+                                    var day = new Array("Sunday", "Monday", "Tuesday",
+                                        "Wednesday", "Thursday", "Friday", "Saturday");
+
+                                    var month = new Array("January", "February", "March", "April", "may", "June",
+                                        "July", "August", "September", "October", "November", " December");
+
+                                    document.write(day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] +
+                                        " " + d.getFullYear());
+                                    //
+                                </script>
                             </div>
-                            <amp-video id="video" autoplay>
-                                <source src="images/index-en.mp4" type="video/mp4">
+                            <amp-video controls
+                            width="640"
+                            height="360"
+                            layout="responsive"
+                            id="video"src="images/index-en.mp4"
+                            type="video/mp4"
+                            autoplay>
                             </amp-video>
                         </div>
                     </div>
@@ -550,13 +570,13 @@
 
     </style>
     
-    
-    <script src="scripts/modernizr-2.8.3.min.js"></script>
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/index.js"></script>
-    <script>window.myform_ua='VUEtMTcxNDIzNDM1LTE=';</script>
-    <script>	
+    <amp-script src="scripts/modernizr-2.8.3.min.js"></amp-script>
+    <amp-script src="scripts/jquery.min.js"></amp-script>
+    <amp-script src="scripts/bootstrap.min.js"></amp-script>
+    <amp-script src="scripts/index.js"></amp-script>
+    <amp-script script="form-script"></amp-script>
+    <script id="form-script" type="text/plain" target="amp-script">
+        window.myform_ua='VUEtMTcxNDIzNDM1LTE=';
         var time = Math.floor((new Date()).getTime() / 1000);
         $('<script>').attr({src: 'scripts/ufgag.min.js?' + time}).appendTo('body')
     </script>
